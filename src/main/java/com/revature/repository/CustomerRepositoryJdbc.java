@@ -154,5 +154,11 @@ public class CustomerRepositoryJdbc implements CustomerRepository {
 		return new String();
 	}
 	
+	public static void main(String[] args){
+		
+		CustomerRepositoryJdbc repository = new CustomerRepositoryJdbc();
+		
+		logger.trace(repository.insert(new Customer(999,"a","a","a","a")));
+	}
 	
 }
