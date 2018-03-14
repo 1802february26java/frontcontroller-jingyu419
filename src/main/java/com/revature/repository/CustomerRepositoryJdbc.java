@@ -158,7 +158,7 @@ public class CustomerRepositoryJdbc implements CustomerRepository {
 		
 		CustomerRepositoryJdbc repository = new CustomerRepositoryJdbc();
 		
-		logger.trace(repository.insert(new Customer(999,"a","a","a","a")));
+		logger.trace("Insert a new Customer: "+repository.insert(new Customer(1001,"b","b","b","b")));
 	}
 	
 }
