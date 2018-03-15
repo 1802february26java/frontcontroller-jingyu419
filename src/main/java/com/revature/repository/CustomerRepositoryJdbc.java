@@ -25,7 +25,7 @@ public class CustomerRepositoryJdbc implements CustomerRepository {
 		
 	}
 	
-	public static CustomerRepositoryJdbc getCustomerDaoJdbc() {
+	public static CustomerRepositoryJdbc getInstance() {
 		if(customerDaoJdbc == null) {
 			customerDaoJdbc = new CustomerRepositoryJdbc();
 		}
